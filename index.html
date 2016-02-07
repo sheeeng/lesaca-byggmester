@@ -15,6 +15,23 @@
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/custom.css" rel="stylesheet">
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+
+    <!--Super Simple Slider (SSS)-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="assets/js/sss.js"></script>
+    <link rel="stylesheet" href="assets/css/sss.css" type="text/css" media="all">
+
+    <script>
+    jQuery(function($) {
+        $('.slider').sss({
+        slideShow : true, // Set to false to prevent SSS from automatically animating.
+        startOn : 0, // Slide to display first. Uses array notation (0 = first slide).
+        transition : 400, // Length (in milliseconds) of the fade transition.
+        speed : 3500, // Slideshow speed in milliseconds.
+        showNav : true // Set to false to hide navigation arrows.
+        });
+    });
+    </script>
 </head>
 <body>
     <!-- Banner -->
@@ -24,7 +41,7 @@
     -->
         <p><img height="55%" src="images/logo_lesaca_as.png" width="55%"></p>
         <p>Byggmester og Entreprenørforretning</p>
-    </section><!-- One -->
+    </section>
     <section class="wrapper special" id="one">
         <div class="inner">
         <!--
@@ -34,33 +51,34 @@
         -->
             <div class="features">
                 <div class="feature">
-                    <a href="https://mreg.nhosp.no/scripts/cgiip.wsc/web/firma.html?mbnr=0x000000000000d30b" target="_blank"></a>
-                    <p><img height="40%" src="images/logo_mester.jpg" width="40%"></p>
+                    <a href="https://mreg.nhosp.no/scripts/cgiip.wsc/web/firma.html?mbnr=0x000000000000d30b" target="_blank">
+                    <p><img src="images/logo_mester.jpg" width="40%"></p></a>
                 </div>
                 <div class="feature">
-                    <a href="https://www.byggmesterforbundet.no/privat-person/finn-medlem" target="_blank"></a>
-                    <p><img height="40%" src="images/logo_byggmesterforbundet.jpg" width="40%"></p>
+                    <a href="http://www.byggmesterforbundet.no/privat-person/finn-medlem" target="_blank">
+                    <p><img src="images/logo_byggmesterforbundet.jpg" width="40%"></p></a>
                 </div>
                 <div class="feature">
-                    <a href="https://sgregister.dibk.no/enterprises/879294932" target="_blank"></a>
-                    <p><img height="40%" src="images/logo_dibk.jpg" width="40%"></p>
+                    <a href="https://sgregister.dibk.no/enterprises/879294932" target="_blank">
+                    <p><img src="images/logo_dibk.jpg" width="40%"></p></a>
                 </div>
                 <div class="feature">
-                    <a href="https://www.achilles.com/nb/nettverk?option=com_content&view=category&id=413&Itemid=109&select_item=276_410&select_item_276_410=126_413" target="_blank"></a>
-                    <p><img height="40%" src="images/logo_startbank.jpg" width="40%"></p>
+                    <a href="https://www.achilles.com/nb/nettverk?option=com_content&view=category&id=413&Itemid=109&select_item=276_410&select_item_276_410=126_413" target="_blank">
+                    <p><img src="images/logo_startbank.jpg" width="40%"></p></a>
                 </div>
-                <!--
-                <div class="feature">
-                    <a href="https://www.google.com/photos" target="_blank">
-                        <p><img src="images/logo_googlephotos.png" height="40%" width="40%"/></p>
-                    </a>
-                </div>
-                <div class="feature">
-                    <a href="https://www.flickr.com" target="_blank">
-                        <p><img src="images/logo_flickr.png" height="40%" width="40%"/></p>
-                    </a>
-                </div>
-                -->
+            </div>
+        </div>
+    </section>
+    <section class="wrapper special" id="two">
+        <div class="inner">
+            <header class="major">
+                <h2 id="content">Galleri</h2>
+            </header>
+            <div class="slider" width="42%">
+                <div><img src="gallery/IMG_4004.JPG" /><span class="caption"></span></div>
+                <div><img src="gallery/IMG_4007.JPG" /><span class="caption"></span></div>
+                <img src="gallery/IMG_3993.JPG" />
+                <img src="gallery/IMG_3994.JPG" />
             </div>
         </div>
     </section>
